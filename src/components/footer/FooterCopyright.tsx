@@ -13,6 +13,7 @@ const FooterCopyright: React.FC = () => {
           className="hover:text-cyberpunk-blue transition-colors flex items-center gap-1 inline-flex"
         >
           © 2025 AI WEB TOOLS LLC. All rights reserved.
+          <ExternalLink className="h-3 w-3" />
         </a>
       </p>
       <div className="flex space-x-4">

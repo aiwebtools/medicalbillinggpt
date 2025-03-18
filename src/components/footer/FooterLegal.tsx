@@ -38,9 +38,9 @@ const FooterLegal: React.FC = () => {
           target="_blank" 
           rel="noopener noreferrer"
           className="inline-flex items-center justify-center px-6 py-3 rounded-full 
-                     bg-gradient-to-r from-cyberpunk-blue to-cyberpunk-purple text-white font-medium
-                     hover:shadow-lg hover:shadow-cyberpunk-blue/20 transform hover:scale-105
-                     transition-all duration-300"
+                   bg-gradient-to-r from-cyberpunk-blue to-cyberpunk-purple text-white font-medium
+                   hover:shadow-lg hover:shadow-cyberpunk-blue/20 transform hover:scale-105
+                   transition-all duration-300"
         >
           More AI Tools
         </a>

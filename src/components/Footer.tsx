@@ -2,6 +2,18 @@
 import React from 'react';
 
 const Footer: React.FC = () => {
+  const handleAnchorClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    // Only handle anchor links that start with #
+    if (href.startsWith('#')) {
+      e.preventDefault();
+      const element = document.querySelector(href);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+    // External links will work normally with their href
+  };
+
   return (
     <footer className="bg-cyberpunk-darker py-12 px-6 border-t border-cyberpunk-blue/20 relative overflow-hidden" id="footer">
       {/* Background grid pattern */}
@@ -84,6 +96,7 @@ const Footer: React.FC = () => {
                 <a 
                   href="#faq" 
                   className="text-gray-400 hover:text-cyberpunk-blue transition-colors"
+                  onClick={(e) => handleAnchorClick(e, '#faq')}
                 >
                   FAQ
                 </a>
@@ -92,6 +105,7 @@ const Footer: React.FC = () => {
                 <a 
                   href="#disclaimer" 
                   className="text-gray-400 hover:text-cyberpunk-blue transition-colors"
+                  onClick={(e) => handleAnchorClick(e, '#disclaimer')}
                 >
                   Disclaimer
                 </a>

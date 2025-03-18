@@ -1,12 +1,38 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import React, { useEffect } from 'react';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import HeroSection from '@/components/HeroSection';
+import VideoEmbed from '@/components/VideoEmbed';
+import CapabilitiesSection from '@/components/CapabilitiesSection';
+import UseCasesSection from '@/components/UseCasesSection';
+import TestimonialsSection from '@/components/TestimonialsSection';
+import FAQSection from '@/components/FAQSection';
+import DisclaimerSection from '@/components/DisclaimerSection';
+import ConsentDialog from '@/components/ConsentDialog';
 
 const Index = () => {
+  useEffect(() => {
+    // Update the document title
+    document.title = "Medical Billing & Coding GPT | AI-Powered Billing Assistant";
+  }, []);
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-cyberpunk-dark text-white overflow-x-hidden">
+      <Header />
+      
+      <main>
+        <HeroSection />
+        <VideoEmbed />
+        <CapabilitiesSection />
+        <UseCasesSection />
+        <TestimonialsSection />
+        <FAQSection />
+        <DisclaimerSection />
+      </main>
+      
+      <Footer />
+      <ConsentDialog />
     </div>
   );
 };

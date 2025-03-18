@@ -6,6 +6,10 @@ interface FAQItemProps {
   answer: string;
 }
 
+interface FAQSectionProps {
+  id?: string;
+}
+
 const FAQItem: React.FC<FAQItemProps> = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
   
@@ -34,7 +38,7 @@ const FAQItem: React.FC<FAQItemProps> = ({ question, answer }) => {
   );
 };
 
-const FAQSection: React.FC = () => {
+const FAQSection: React.FC<FAQSectionProps> = ({ id }) => {
   const faqs = [
     {
       question: "What is Medical Billing & Coding GPT?",
@@ -64,7 +68,7 @@ const FAQSection: React.FC = () => {
   
   return (
     <section 
-      id="faq"
+      id={id}
       className="py-20 px-6 relative"
     >
       {/* Background Elements */}

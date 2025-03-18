@@ -1,10 +1,14 @@
 
 import React from 'react';
 
-const DisclaimerSection: React.FC = () => {
+interface DisclaimerSectionProps {
+  id?: string;
+}
+
+const DisclaimerSection: React.FC<DisclaimerSectionProps> = ({ id }) => {
   return (
     <section 
-      id="disclaimer"
+      id={id}
       className="py-20 px-6 relative"
     >
       <div className="max-w-4xl mx-auto">

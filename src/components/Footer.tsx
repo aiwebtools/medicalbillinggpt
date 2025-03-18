@@ -3,7 +3,7 @@ import React from 'react';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-cyberpunk-darker py-12 px-6 border-t border-cyberpunk-blue/20 relative overflow-hidden">
+    <footer className="bg-cyberpunk-darker py-12 px-6 border-t border-cyberpunk-blue/20 relative overflow-hidden" id="footer">
       {/* Background grid pattern */}
       <div className="absolute inset-0 bg-cyber-grid opacity-10"></div>
       

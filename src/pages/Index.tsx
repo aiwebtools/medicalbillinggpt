@@ -15,6 +15,22 @@ const Index = () => {
   useEffect(() => {
     // Update the document title
     document.title = "Medical Billing & Coding GPT | AI-Powered Billing Assistant";
+    
+    // Set up smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        if (targetId && targetId !== '#') {
+          const targetElement = document.querySelector(targetId);
+          if (targetElement) {
+            targetElement.scrollIntoView({
+              behavior: 'smooth'
+            });
+          }
+        }
+      });
+    });
   }, []);
 
   return (
@@ -27,8 +43,8 @@ const Index = () => {
         <CapabilitiesSection />
         <UseCasesSection />
         <TestimonialsSection />
-        <FAQSection />
-        <DisclaimerSection />
+        <FAQSection id="faq" />
+        <DisclaimerSection id="disclaimer" />
       </main>
       
       <Footer />

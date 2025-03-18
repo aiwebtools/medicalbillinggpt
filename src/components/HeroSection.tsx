@@ -123,14 +123,24 @@ const HeroSection: React.FC = () => {
               </div>
             </div>
             
-            {/* Center element */}
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 rounded-full bg-cyberpunk-darker border border-cyberpunk-blue/50 flex items-center justify-center animate-float shadow-lg shadow-cyberpunk-blue/20">
+            {/* Center element - Now clickable */}
+            <a 
+              href="https://chatgpt.com/g/g-67d9f1b2c9b881918c0fac1ca6ea38ea-medical-billing-coding-gpt"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-32 h-32 rounded-full 
+                         bg-cyberpunk-darker border border-cyberpunk-blue/50 flex items-center justify-center 
+                         animate-float shadow-lg shadow-cyberpunk-blue/20 
+                         hover:shadow-cyberpunk-blue/40 hover:border-cyberpunk-blue/75 hover:scale-105
+                         transition-all duration-300 cursor-pointer"
+              aria-label="Try Medical Billing & Coding GPT"
+            >
               <div className="text-center">
                 <span className="block text-cyberpunk-blue font-bold">Medical</span>
                 <span className="block text-white text-sm">Billing & Coding</span>
                 <span className="block text-cyberpunk-purple font-bold">GPT</span>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>

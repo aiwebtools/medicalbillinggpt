@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { ExternalLink } from "lucide-react";
 
 const FooterLegal: React.FC = () => {
   return (
@@ -9,21 +10,23 @@ const FooterLegal: React.FC = () => {
         <li>
           <a 
             href="https://openai.com/policies/privacy-policy/" 
-            className="text-gray-400 hover:text-cyberpunk-blue transition-colors"
+            className="text-gray-400 hover:text-cyberpunk-blue transition-colors flex items-center gap-2"
             target="_blank" 
             rel="noopener noreferrer"
           >
             Privacy Policy
+            <ExternalLink className="h-3 w-3" />
           </a>
         </li>
         <li>
           <a 
             href="https://aiwebtools.ai/terms-of-services" 
-            className="text-gray-400 hover:text-cyberpunk-blue transition-colors"
+            className="text-gray-400 hover:text-cyberpunk-blue transition-colors flex items-center gap-2"
             target="_blank" 
             rel="noopener noreferrer"
           >
             Terms of Service
+            <ExternalLink className="h-3 w-3" />
           </a>
         </li>
       </ul>

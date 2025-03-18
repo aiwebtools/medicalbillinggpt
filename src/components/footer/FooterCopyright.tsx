@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { ExternalLink } from "lucide-react";
 
 const FooterCopyright: React.FC = () => {
   return (
@@ -9,7 +10,7 @@ const FooterCopyright: React.FC = () => {
           href="https://www.aiwebtools.ai"
           target="_blank" 
           rel="noopener noreferrer"
-          className="hover:text-cyberpunk-blue transition-colors"
+          className="hover:text-cyberpunk-blue transition-colors flex items-center gap-1 inline-flex"
         >
           © 2025 AI WEB TOOLS LLC. All rights reserved.
         </a>
@@ -19,9 +20,10 @@ const FooterCopyright: React.FC = () => {
           href="https://www.aiwebtools.ai"
           target="_blank" 
           rel="noopener noreferrer"
-          className="text-gray-400 hover:text-cyberpunk-blue transition-colors"
+          className="text-gray-400 hover:text-cyberpunk-blue transition-colors flex items-center gap-1"
         >
           Website
+          <ExternalLink className="h-3 w-3" />
         </a>
         <a 
           href="mailto:Contact@ai-webtools.com"

@@ -1,14 +1,15 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
   const handleAnchorClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     // Only handle anchor links that start with #
     if (href.startsWith('#')) {
       e.preventDefault();
-      const element = document.querySelector(href);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
+      const targetElement = document.querySelector(href);
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth' });
       }
     }
     // External links will work normally with their href
@@ -59,11 +60,15 @@ const Footer: React.FC = () => {
             <div className="space-y-2 text-left">
               <p className="text-gray-400 text-sm">
                 <span className="text-cyberpunk-blue font-medium">Phone: </span>
-                <a href="tel:4758008096" className="hover:text-white transition-colors">(475) 800-8096</a>
+                <a href="tel:4758008096" className="hover:text-white transition-colors">
+                  (475) 800-8096
+                </a>
               </p>
               <p className="text-gray-400 text-sm">
                 <span className="text-cyberpunk-blue font-medium">Email: </span>
-                <a href="mailto:Contact@ai-webtools.com" className="hover:text-white transition-colors">Contact@ai-webtools.com</a>
+                <a href="mailto:Contact@ai-webtools.com" className="hover:text-white transition-colors">
+                  Contact@ai-webtools.com
+                </a>
               </p>
             </div>
           </div>

@@ -20,10 +20,10 @@ const Footer: React.FC = () => {
 
   return (
     <footer className="bg-cyberpunk-darker py-12 px-6 border-t border-cyberpunk-blue/20 relative overflow-hidden" id="footer">
-      {/* Background grid pattern */}
-      <div className="absolute inset-0 bg-cyber-grid opacity-10"></div>
+      {/* Background grid pattern - making sure it doesn't block clicks */}
+      <div className="absolute inset-0 bg-cyber-grid opacity-10 pointer-events-none"></div>
       
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto relative z-5">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Column 1: Logo and brief description */}
           <FooterLogo />

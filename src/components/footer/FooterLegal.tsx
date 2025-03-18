@@ -13,6 +13,7 @@ const FooterLegal: React.FC = () => {
             className="text-gray-400 hover:text-cyberpunk-blue transition-colors flex items-center gap-2"
             target="_blank" 
             rel="noopener noreferrer"
+            style={{ position: 'relative', zIndex: 10 }}
           >
             Privacy Policy
             <ExternalLink className="h-3 w-3" />
@@ -24,6 +25,7 @@ const FooterLegal: React.FC = () => {
             className="text-gray-400 hover:text-cyberpunk-blue transition-colors flex items-center gap-2"
             target="_blank" 
             rel="noopener noreferrer"
+            style={{ position: 'relative', zIndex: 10 }}
           >
             Terms of Service
             <ExternalLink className="h-3 w-3" />
@@ -41,6 +43,7 @@ const FooterLegal: React.FC = () => {
                    bg-gradient-to-r from-cyberpunk-blue to-cyberpunk-purple text-white font-medium
                    hover:shadow-lg hover:shadow-cyberpunk-blue/20 transform hover:scale-105
                    transition-all duration-300"
+          style={{ position: 'relative', zIndex: 10 }}
         >
           More AI Tools
         </a>

@@ -11,6 +11,7 @@ const FooterCopyright: React.FC = () => {
           target="_blank" 
           rel="noopener noreferrer"
           className="hover:text-cyberpunk-blue transition-colors flex items-center gap-1 inline-flex"
+          style={{ position: 'relative', zIndex: 10 }}
         >
           © 2025 AI WEB TOOLS LLC. All rights reserved.
           <ExternalLink className="h-3 w-3" />
@@ -22,6 +23,7 @@ const FooterCopyright: React.FC = () => {
           target="_blank" 
           rel="noopener noreferrer"
           className="text-gray-400 hover:text-cyberpunk-blue transition-colors flex items-center gap-1"
+          style={{ position: 'relative', zIndex: 10 }}
         >
           Website
           <ExternalLink className="h-3 w-3" />
@@ -29,6 +31,7 @@ const FooterCopyright: React.FC = () => {
         <a 
           href="mailto:Contact@ai-webtools.com"
           className="text-gray-400 hover:text-cyberpunk-blue transition-colors"
+          style={{ position: 'relative', zIndex: 10 }}
         >
           Contact
         </a>

@@ -17,6 +17,7 @@ const FooterQuickLinks: React.FC<FooterQuickLinksProps> = ({ handleAnchorClick }
             target="_blank" 
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-cyberpunk-blue transition-colors flex items-center gap-2"
+            style={{ position: 'relative', zIndex: 10 }}
           >
             Medical Billing & Coding GPT
             <ExternalLink className="h-3 w-3" />
@@ -28,6 +29,7 @@ const FooterQuickLinks: React.FC<FooterQuickLinksProps> = ({ handleAnchorClick }
             target="_blank" 
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-cyberpunk-blue transition-colors flex items-center gap-2"
+            style={{ position: 'relative', zIndex: 10 }}
           >
             Insurance Claims GPT
             <ExternalLink className="h-3 w-3" />
@@ -38,6 +40,7 @@ const FooterQuickLinks: React.FC<FooterQuickLinksProps> = ({ handleAnchorClick }
             href="#faq" 
             onClick={(e) => handleAnchorClick(e, '#faq')}
             className="text-gray-400 hover:text-cyberpunk-blue transition-colors"
+            style={{ position: 'relative', zIndex: 10 }}
           >
             FAQ
           </a>
@@ -47,6 +50,7 @@ const FooterQuickLinks: React.FC<FooterQuickLinksProps> = ({ handleAnchorClick }
             href="#disclaimer" 
             onClick={(e) => handleAnchorClick(e, '#disclaimer')}
             className="text-gray-400 hover:text-cyberpunk-blue transition-colors"
+            style={{ position: 'relative', zIndex: 10 }}
           >
             Disclaimer
           </a>
@@ -57,6 +61,7 @@ const FooterQuickLinks: React.FC<FooterQuickLinksProps> = ({ handleAnchorClick }
             target="_blank" 
             rel="noopener noreferrer"
             className="text-gray-400 hover:text-cyberpunk-blue transition-colors flex items-center gap-2"
+            style={{ position: 'relative', zIndex: 10 }}
           >
             More AI Tools
             <ExternalLink className="h-3 w-3" />

@@ -40,13 +40,13 @@ const FooterLogo: React.FC = () => {
       <div className="space-y-2 text-left">
         <p className="text-gray-400 text-sm">
           <span className="text-cyberpunk-blue font-medium">Phone: </span>
-          <a href="tel:4758008096" className="hover:text-white transition-colors">
+          <a href="tel:4758008096" className="hover:text-white transition-colors" style={{ position: 'relative', zIndex: 10 }}>
             (475) 800-8096
           </a>
         </p>
         <p className="text-gray-400 text-sm">
           <span className="text-cyberpunk-blue font-medium">Email: </span>
-          <a href="mailto:Contact@ai-webtools.com" className="hover:text-white transition-colors">
+          <a href="mailto:Contact@ai-webtools.com" className="hover:text-white transition-colors" style={{ position: 'relative', zIndex: 10 }}>
             Contact@ai-webtools.com
           </a>
         </p>

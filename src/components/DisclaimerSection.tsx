@@ -18,6 +18,14 @@ const DisclaimerSection: React.FC<DisclaimerSectionProps> = ({ id }) => {
           </h2>
         </div>
         
+        {/* Important Notice */}
+        <div className="glass-card rounded-xl p-6 mb-8 border-l-4 border-cyberpunk-blue">
+          <p className="text-white font-semibold text-lg mb-2">Important Notice</p>
+          <p className="text-gray-300">
+            This content is provided for <strong className="text-white">informational, educational, and research purposes only</strong>. It should not be used as a substitute for professional medical, legal, or financial advice.
+          </p>
+        </div>
+        
         <div className="glass-card rounded-xl p-8">
           <div className="space-y-6 text-gray-300 text-sm text-left">
             <p>

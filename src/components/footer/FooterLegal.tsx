@@ -21,7 +21,7 @@ const FooterLegal: React.FC = () => {
         </li>
         <li>
           <a 
-            href="https://aiwebtools.ai/terms-of-services" 
+            href="https://aiwebtools.lovable.app/disclaimers" 
             className="text-gray-400 hover:text-cyberpunk-blue transition-colors flex items-center gap-2"
             target="_blank" 
             rel="noopener noreferrer"

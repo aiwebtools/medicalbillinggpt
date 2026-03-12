@@ -155,7 +155,7 @@ const Header: React.FC = () => {
                   className="cyberpunk-button bg-gradient-to-r from-cyberpunk-blue to-cyberpunk-purple hover:opacity-90"
                 >
                   <a 
-                    href="https://www.aiwebtools.ai" 
+                    href="https://aiwebtools.lovable.app/?via=aiwebtools" 
                     target="_blank" 
                     rel="noopener noreferrer"
                   >

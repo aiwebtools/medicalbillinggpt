@@ -7,7 +7,7 @@ const FooterCopyright: React.FC = () => {
     <div className="mt-10 pt-8 border-t border-gray-800 flex flex-col sm:flex-row items-center justify-between">
       <p className="text-gray-500 text-sm mb-4 sm:mb-0">
         <a 
-          href="https://www.aiwebtools.ai"
+          href="https://aiwebtools.lovable.app/?via=aiwebtools"
           target="_blank" 
           rel="noopener noreferrer"
           className="hover:text-cyberpunk-blue transition-colors flex items-center gap-1 inline-flex"
@@ -19,7 +19,7 @@ const FooterCopyright: React.FC = () => {
       </p>
       <div className="flex space-x-4">
         <a 
-          href="https://www.aiwebtools.ai"
+          href="https://aiwebtools.lovable.app/?via=aiwebtools"
           target="_blank" 
           rel="noopener noreferrer"
           className="text-gray-400 hover:text-cyberpunk-blue transition-colors flex items-center gap-1"

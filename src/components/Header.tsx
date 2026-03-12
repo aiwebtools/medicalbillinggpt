@@ -217,7 +217,7 @@ const Header: React.FC = () => {
             </DropdownMenuItem>
             <DropdownMenuItem asChild>
               <a 
-                href="https://www.aiwebtools.ai" 
+                href="https://aiwebtools.lovable.app/?via=aiwebtools" 
                 className="text-white bg-gradient-to-r from-cyberpunk-blue to-cyberpunk-purple hover:opacity-90 py-3 rounded mt-2"
                 target="_blank" 
                 rel="noopener noreferrer"

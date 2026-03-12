@@ -36,7 +36,7 @@ const FooterLegal: React.FC = () => {
       {/* "More AI Tools" button */}
       <div className="pt-4">
         <a 
-          href="https://www.aiwebtools.ai"
+          href="https://aiwebtools.lovable.app/?via=aiwebtools"
           target="_blank" 
           rel="noopener noreferrer"
           className="inline-flex items-center justify-center px-6 py-3 rounded-full 
